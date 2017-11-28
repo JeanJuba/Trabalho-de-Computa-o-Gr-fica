@@ -6,6 +6,7 @@
 package cv;
 
 import org.opencv.core.Core;
+import util.VideoAnalyzer;
 
 /**
  *
@@ -13,7 +14,7 @@ import org.opencv.core.Core;
  */
 public class MainClass {
 
-    public MainClass(){
+    static{
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
     }
     
@@ -22,6 +23,8 @@ public class MainClass {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        VideoAnalyzer val = new VideoAnalyzer();
+        val.loadVideo();
     }
     
 }
