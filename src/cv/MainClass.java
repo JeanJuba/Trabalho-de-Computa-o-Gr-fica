@@ -5,12 +5,18 @@
  */
 package cv;
 
+import org.opencv.core.Core;
+
 /**
  *
  * @author Usuario
  */
 public class MainClass {
 
+    public MainClass(){
+        System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+    }
+    
     /**
      * @param args the command line arguments
      */
