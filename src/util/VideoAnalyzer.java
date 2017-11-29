@@ -41,7 +41,7 @@ public class VideoAnalyzer {
         
         int i = 1;
         while(video.read(frame)){
-            System.out.println("frame: " + i);
+            
             try {
                 TimeUnit.MILLISECONDS.sleep(500);
             } catch (InterruptedException ex) {
@@ -51,7 +51,7 @@ public class VideoAnalyzer {
             vidpanel.repaint();
             i++;
         }
-        
+        System.out.println("Frames: " + i);
         
         
     }
