@@ -22,9 +22,11 @@ public class MainClass {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        VideoAnalyzer val = new VideoAnalyzer();
-        val.loadVideo();
+    // colocar o endereço completo do dll do opencv_java330
+    //System.load("C:\\Users\\Alcsaw\\Documents\\OpenCV\\opencv\\build\\java\\x64\\opencv_java330.dll");        
+    // TODO code application logic here
+        VideoAnalyzer videoAnalyzer = new VideoAnalyzer();
+        videoAnalyzer.loadVideo();
     }
     
 }

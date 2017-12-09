@@ -14,7 +14,8 @@ import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import org.opencv.core.Mat;
-import org.opencv.highgui.VideoCapture;
+import org.opencv.videoio.VideoCapture;
+//import org.opencv.highgui.VideoCapture;
 
 /**
  *
@@ -26,7 +27,7 @@ public class VideoAnalyzer {
         JFileChooser jf = new JFileChooser();
         //jf.showOpenDialog(null);
         
-        VideoCapture video = new VideoCapture("G:\\JAVA\\Trabalho de Computação Gráfica\\video_teste.mp4");
+        VideoCapture video = new VideoCapture("green_ball.mp4");
         Mat frame = new Mat();
         JFrame jframe = new JFrame("MyTitle");
         jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
